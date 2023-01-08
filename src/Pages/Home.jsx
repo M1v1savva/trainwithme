@@ -8,8 +8,7 @@ import './../App.css'
 
 function Home({ tableData, setTableData }) {
     
-    const HANDLE_URL = process.env.NODE_ENV === 'development' ? 
-    process.env.REACT_APP_HANDLE_URL : process.env.REACT_APP_PROD_HANDLE_URL;
+    const HANDLE_URL = process.env.REACT_APP_PROD_HANDLE_URL;
 
     const [handle, setHandle] = useState("");
     const [rank, setRank] = useState("");
