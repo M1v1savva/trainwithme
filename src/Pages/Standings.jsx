@@ -11,7 +11,6 @@ function Standings({ tableData, setTableData }) {
         try {
             const res = await axios.post(STANDINGS_URL, {})
             setTableData(res.data.tableData)
-            console.log(res.data.tableData)
         } catch(error) {
             if (error.response) {
                 console.log(error.response)
@@ -23,7 +22,7 @@ function Standings({ tableData, setTableData }) {
 
     useEffect(() => {
         requestStandings();
-    });
+    }, []);
 
     const getScore = (item) => {
         const ans = "+";
