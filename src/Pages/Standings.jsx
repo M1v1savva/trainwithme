@@ -5,6 +5,8 @@ import './../App.css'
 function Standings({ tableData, setTableData }) {
 
     const STANDINGS_URL = process.env.REACT_APP_PROD_STANDINGS_URL;
+    console.log('st url')
+    console.log(STANDINGS_URL)
 
     const requestStandings = async() => {
         try {
