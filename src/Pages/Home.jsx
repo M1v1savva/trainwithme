@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Alert from 'react-bootstrap/Alert';
-import axios from "axios"
+import axios from "./../axios.js"
 import './../App.css'
 
 function Home({ tableData, setTableData }) {
