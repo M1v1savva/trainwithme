@@ -1,0 +1,247 @@
+body {
+  background-color: rgb(38, 38, 38) !important;
+}
+
+.title {
+  color:rgb(240, 240, 240);
+  margin: auto;
+  width:600px;
+  margin-top: 100px;
+}
+
+.title1 {
+  color:rgb(240, 240, 240);
+  margin: auto;
+  width:600px;
+}
+
+.form {
+  color:rgb(240, 240, 240) !important;
+  margin: auto;
+  width:600px;
+  margin-top: 50px;
+}
+
+.form1 {
+  margin: auto;
+  width: 600px;
+  color: rgb(240, 240, 240) !important;
+}
+
+.handle1 {
+  margin: auto;
+  color: rgb(240, 240, 240) !important;
+  width: 600px;
+  margin-top: 10px;
+}
+
+.handle2 {
+  color: rgb(0, 0, 0);
+  margin: auto;
+  margin-top: 0px;
+  width: 600px;
+  margin-bottom: 0px;
+  text-decoration: none;
+}
+
+.handle-unrated {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.handle-white {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.handle-grey {
+  color: rgb(128, 128, 128);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.handle-green {
+  color: rgb(0, 128, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.handle-cyan {
+  color: rgb(3, 168, 158);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.handle-blue {
+  color: rgb(0, 80, 256);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.handle-purple {
+  color: rgb(170, 0, 170);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.handle-orange {
+  color: rgb(255, 140, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.handle-red {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.handle-nutella::first-letter {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.handle-nutella {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.update-button {
+  margin-left: 30px !important;
+}
+
+.invalid-handle {
+  height: 15px;
+  width: 270px;
+  font-size: 13px;
+  display: flex !important;
+  align-items: center !important;
+  text-align: middle !important;
+}
+
+.mashups-list {
+  color:rgb(240, 240, 240) !important;
+  margin: auto;
+  margin-top: 50px;
+  width:600px;
+}
+
+.single-week {
+  margin-top: 20px;
+}
+
+.user-block {
+  width: 200px;
+}
+
+.ac-block {
+  width: 100px;
+}
+
+.ac-submission {
+  background-color: rgb(102, 189, 82);
+}
+
+.wa-submission {
+  background-color: rgb(177, 76, 66);
+}
+
+.single-contest-links {
+  display: flex;
+}
+
+.single-link {
+  color: greenyellow;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  caption-side: top;
+  font-size: 1.5em;
+  /* margin: .5em 0 .75em; */
+  margin: auto;
+  max-width: 220px;
+  color:rgb(240, 240, 240);
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  border-left: solid 1px rgb(60, 53, 53);
+  border-bottom: solid 1px rgb(60, 53, 53);
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
