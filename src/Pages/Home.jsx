@@ -31,6 +31,7 @@ function Home({ tableData, setTableData }) {
             const res = await axios.post(HANDLE_URL, {
                 handle,
             })
+            console.log(res)
             const newRank = res.data.rank;
             const newMessage = res.data.message;
             console.log(newRank)
