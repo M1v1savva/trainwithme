@@ -9,8 +9,7 @@ import './../App.css'
 function Home({ tableData, setTableData }) {
     
     const HANDLE_URL = process.env.REACT_APP_PROD_HANDLE_URL;
-    console.log(HANDLE_URL)
-
+    
     const [handle, setHandle] = useState("");
     const [rank, setRank] = useState("");
     const [message, setMessage] = useState("");
@@ -28,11 +27,14 @@ function Home({ tableData, setTableData }) {
     const sendHandle = async() => {
         setFormStatus(1);
         try {
+            console.log('kekw')
             const res = await axios.post(HANDLE_URL, {
                 handle,
             })
             const newRank = res.data.rank;
             const newMessage = res.data.message;
+            console.log(newRank)
+            console.log(newMessage)
             if (newRank === 'no user') {
                 setFormStatus(3);
             } else {
