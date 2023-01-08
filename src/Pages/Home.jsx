@@ -32,8 +32,8 @@ function Home({ tableData, setTableData }) {
                 handle,
             })
             console.log(res)
-            const newRank = res['rank'];
-            const newMessage = res['message'];
+            const newRank = res.data.rank;
+            const newMessage = res.data.message;
             console.log(newRank)
             console.log(newMessage)
             if (newRank === 'no user') {
