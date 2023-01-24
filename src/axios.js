@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const instance = axios.create({
-    baseURL: 'https://trainwithme-flask.onrender.com',
+    baseURL: process.env.REACT_APP_PROD_BASE_URL,
 });
 
 export default instance;
