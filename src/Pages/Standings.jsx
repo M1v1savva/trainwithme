@@ -97,7 +97,7 @@ function Standings({ tableData, setTableData }) {
             <th>E</th>
             <th>F</th>
             <th>G</th>
-            {/* <th>H</th>
+            <th>H</th>
             <th>I</th>
             <th>J</th>
             <th>K</th>
@@ -109,7 +109,7 @@ function Standings({ tableData, setTableData }) {
             <th>Q</th>
             <th>R</th>
             <th>S</th>
-            <th>T</th> */}
+            <th>T</th>
           </tr>
         </thead>
         <tbody>
